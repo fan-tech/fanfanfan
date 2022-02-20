@@ -1,6 +1,7 @@
 @media  screen and (max-width:480px) {
     body{
         overflow:hidden;
+        max-width:480px;
     }
 
     .container {
