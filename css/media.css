@@ -1,0 +1,261 @@
+@media  screen and (max-width:480px) {
+
+    .container {
+        max-width: 300px;
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+    
+    /* ヘッダー */
+
+    header {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(255,255,255);
+        position: fixed; /* ウィンドウを基準に画面に固定 */
+        top: 0; /* 上下の固定位置を上から0pxにする */
+        left: 0; /* 左右の固定位置を左から0pxにする */
+        position:sticky;
+        position: -webkit-sticky; /* Safari用 */
+        z-index: 1;
+    }
+    
+
+    /* ヘッダーナビゲーション */
+
+
+.nav_header{
+    font-size: 30px;
+    width: 300px;
+}
+
+
+.list_nav_header{
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+}
+
+.head-img{
+    width:100px;
+    margin-right: auto;
+}
+
+
+.list_nav_header>Li{
+    padding: 5px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    padding-top: 18px;
+    font-size: 25px;
+
+}
+
+.list_nav_header>li:first-of-type{
+    margin-right:25%;
+    padding: 5px;
+    font-family: 'Amatic SC', cursive;
+    padding-top: 14px;
+    font-size: 25px;
+}
+
+/* トップビュー */
+
+.area_top_view {
+    height: 300px;
+    background-size: cover;
+    background: url(../img/bg/bg.jpg) no-repeat center;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+}
+
+.area_top_view>.container {
+    width: 250px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.black_box {
+    width: 100vw;
+    background-color: rgba(0,0,0,0.6);
+    height: 150px;
+    color: white;
+
+}
+
+.black_box> img{
+    width: 200px;
+    padding-top: 45px;
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+
+}
+.black_box > p{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    text-justify: 3px;
+}
+/* プロフィール */
+
+.ttl{
+    width:120px;
+    height: 60px;
+    border: #000 solid 1px;
+}
+
+.head_profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.head_profile > .ttl{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    
+
+}
+
+
+.area_profile_home> .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.body_container>.profile_container{
+    display: block;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img.fan_icon{
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    width: auto;
+    margin-right: 35px;
+
+}
+
+.text_home{
+    width:300px;
+    height: auto;
+    border:none;
+    padding-top: 15px;
+    margin:0 auto;
+}
+
+.text_ttl{
+    font-family: 'Klee One', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.description{
+    font-family: 'Klee One', cursive;
+    font-size:18px;
+    text-align: center;
+
+}
+/* 作品 */
+.head_works > .ttl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding:0px 25px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 60px;
+border: #000 solid 1px;
+}
+
+.area_works_home> .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.list_works>li{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:  40px;
+    margin: 0 auto;
+ 
+}
+
+.area_works_img>img{
+    display: flex;
+    width: 265px;
+}
+
+.area_works_img{
+    width: 265px;
+    height: 210px;
+    margin-right: 0px;
+    font-family: 'Klee One', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    border:#000 solid 1px;
+}
+
+.area_works_img>.no_img{
+text-align: center;
+line-height: 210px;
+
+}
+
+.area_works_description{
+    border:none;
+    width:550px;
+    padding: 30px;
+    text-align: center;
+    border-bottom: #000 solid 1px;
+    margin-bottom: 30px;
+
+}
+
+.works_tti{
+    padding-bottom: 30px;
+    font-family: 'Klee One', cursive;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.works_txt{
+    font-family: 'Klee One', cursive;
+    font-size:17px
+}
+
+}
