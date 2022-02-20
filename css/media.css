@@ -1,4 +1,7 @@
 @media  screen and (max-width:480px) {
+    body{
+        overflow:hidden;
+    }
 
     .container {
         max-width: 300px;
@@ -107,7 +110,7 @@
 /* プロフィール */
 
 .ttl{
-    width:120px;
+    width:140px;
     height: 60px;
     border: #000 solid 1px;
 }
