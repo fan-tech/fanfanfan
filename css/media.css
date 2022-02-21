@@ -108,6 +108,8 @@
 
 }
 .black_box > p{
+    max-width: 99%;
+    box-sizing: border-box;
     display: block;
     text-align: center;
     font-size: 18px;
