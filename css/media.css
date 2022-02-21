@@ -72,13 +72,21 @@
 
 /* トップビュー */
 
+div.area_top_view{
+    max-width:  100%;
+    box-sizing: border-box;
+
+
+}
+
 .area_top_view {
     box-sizing: border-box;
     max-width:  100%;
-    background-size: cover;
+    background-size: contain;
     background: url(../img/bg/bg.jpg) no-repeat center;
     font-family: 'Amatic SC', cursive;
     color: white;
+
 }
 
 .area_top_view>.container {
@@ -108,7 +116,7 @@
 
 }
 .black_box > p{
-    max-width: 99%;
+    max-width: 100%;
     box-sizing: border-box;
     display: block;
     text-align: center;
