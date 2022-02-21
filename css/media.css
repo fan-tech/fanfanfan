@@ -1,4 +1,8 @@
 @media  screen and (max-width:480px) {
+    html{
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
     body{
         max-width:480px
     }
@@ -69,7 +73,8 @@
 /* トップビュー */
 
 .area_top_view {
-    height: 300px;
+    box-sizing: border-box;
+    max-width:  100%;
     background-size: cover;
     background: url(../img/bg/bg.jpg) no-repeat center;
     font-family: 'Amatic SC', cursive;
