@@ -1,15 +1,17 @@
 @media  screen and (max-width:480px) {
-    html{
-        overflow-x: hidden;
-        -webkit-overflow-scrolling: touch;
-    }
+
+html{
+    overflow-x: hidden;
+    overflow-y: scroll; -webkit-overflow-scrolling: touch
+}
     body{
-        max-width:480px
+        max-width:100%;
     }
 
     .container {
-        max-width: 300px;
-        padding: 0 40px;
+        box-sizing: border-box;
+        max-width: 100%;
+        padding: 0;
         margin: 0 auto;
     }
     
@@ -19,9 +21,6 @@
         box-sizing: border-box;
         width: 100%;
         height: 50px;
-        position: absolute;
-        top: 0;
-        left: 0;
         background-color: rgb(255,255,255);
         position: fixed; /* ウィンドウを基準に画面に固定 */
         top: 0; /* 上下の固定位置を上から0pxにする */
@@ -34,23 +33,30 @@
 
     /* ヘッダーナビゲーション */
 
+    .area_top_header > .container{
+        width: 100%;
+        margin:0 auto;
+
+    }
+
 
 .nav_header{
     font-size: 30px;
-    width: 300px;
+    width: 100%;
 }
 
 
 .list_nav_header{
     display: flex;
-    align-items:flex-end;
-    justify-content: flex-end;
+    align-items:baseline;
+    justify-content:flex-end;
 }
 
 .head-img{
     width:100px;
-    margin-right: auto;
+    margin-right: 0 auto;
 }
+
 
 
 .list_nav_header>Li{
@@ -64,9 +70,9 @@
 
 .list_nav_header>li:first-of-type{
     margin-right:25%;
-    padding: 5px;
+    padding: 0;
     font-family: 'Amatic SC', cursive;
-    padding-top: 14px;
+    padding-top: 0;
     font-size: 25px;
 }
 
@@ -76,16 +82,20 @@
 
 .area_top_view {
     box-sizing: border-box;
+    width: 100%;
     max-width:  100%;
     background-size: contain;
     background: url(../img/bg/bg.jpg) no-repeat center;
     font-family: 'Amatic SC', cursive;
     color: white;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+
 
 }
 
 .area_top_view>.container {
-    width: 250px;
+    max-width: 100%;
     height:300px;
     display: flex;
     flex-direction: column;
@@ -111,7 +121,7 @@
 
 }
 .black_box > p{
-    width: 150px;
+    max-width: 100%;
     box-sizing: border-box;
     display: block;
     margin: 0 auto;
@@ -122,6 +132,8 @@
 /* プロフィール */
 
 .ttl{
+    width:100%;
+    box-sizing: border-box;
     width:140px;
     height: 60px;
     border: #000 solid 1px;
@@ -199,6 +211,8 @@ img.fan_icon{
 }
 /* 作品 */
 .head_works > .ttl{
+    width:100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,7 +267,7 @@ line-height: 210px;
 
 .area_works_description{
     border:none;
-    width:550px;
+    width:100%;
     padding: 30px;
     text-align: center;
     border-bottom: #000 solid 1px;
@@ -274,4 +288,63 @@ line-height: 210px;
     font-size:17px
 }
 
+}
+
+  /* コンタクト */
+  .head_contact > .ttl{
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding:0px 25px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 60px;
+border: #000 solid 1px;
+}
+
+.area_contact_home> .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.twitter_icon{
+   text-align: center;
+   padding-bottom: 30px;
+}
+
+.twitter
+{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.name{
+font-family: 'Klee One', cursive;
+text-align: center;
+font-size: 35px;
+padding-top: -40px;
+margin-bottom: 50px
+}
+
+/* スクロール調整 */
+
+#profile{
+    height: 50px;
+}
+#works{
+    height: 50px;
+}
+#contact{
+    height: 50px;
 }

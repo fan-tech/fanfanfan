@@ -28,3 +28,9 @@ var scrollElm = (function() {
     })
   });
 })();
+
+// スクロール禁止
+function disableScroll(event) {
+  event.preventDefault();
+}
+document.addEventListener('touchmove', disableScroll, { passive: false });
